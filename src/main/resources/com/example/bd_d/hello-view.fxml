@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<!-- user_form.fxml -->
+
+<VBox alignment="CENTER" prefHeight="700.0" prefWidth="1500.0" spacing="10" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bd_d.HelloController">
+   <Label style="-fx-font-size: 20px;" text="Login Page" />
+   <TextField fx:id="usernameField" maxWidth="-Infinity" prefHeight="26.0" prefWidth="300.0" promptText="Username" style="-fx-background-color: #0ee647;" />
+   <PasswordField fx:id="passwordField" maxWidth="-Infinity" prefHeight="26.0" prefWidth="300.0" promptText="Password" style="-fx-background-color: #0ee647;" />
+   <ComboBox fx:id="roleComboBox" editable="true" maxWidth="-Infinity" prefWidth="300.0" promptText="Pilih Peran" style="-fx-background-color: #0ee647;">
+      <items>
+         <FXCollections fx:factory="observableArrayList">
+            <String fx:value="Admin" />
+            <String fx:value="Siswa" />
+            <String fx:value="Guru" />
+            <String fx:value="Kepala Sekolah" />
+            <String fx:value="Wali Kelas" />
+         </FXCollections>
+      </items>
+   </ComboBox>
+   <Button maxWidth="-Infinity" onAction="#handleLogin" prefHeight="26.0" prefWidth="300.0" style="-fx-background-color: #0ee647;" text="Login" />
+</VBox>
