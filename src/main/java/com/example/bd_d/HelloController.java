@@ -36,7 +36,7 @@ public class HelloController {
                 }else showAlert("Username atau password salah!");
             }
         }catch (NullPointerException e) {
-            showAlert("Isi semua data!");
+            showAlert("Isi semua data lol !");
         }
     }
 
